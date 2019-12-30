@@ -2,12 +2,21 @@
 
 ## NOTES
 
-	[Remember translate this to MD!]
+	[Notes]
+
+
+## HOW TO USE IT
+
+	Run this with bash
+	
+	use "./theme_grub_swapper.sh"
+	or
+	use "bash theme_grub_swapper.sh"
 
 
 ## IMPORTANT
 
-	Each theme must contain a .pf2 file and a .conf file by default the .pf2 file must be called "font32.pf2" and the .conf file must be called "theme.conf".
+	Each theme must contain a .pf2 file and a .conf file, by default the .pf2 file must be called "font32.pf2" and the .conf file must be called "theme.conf".
 	To change the behavior you must change the variables "font_style_file_name=theme.pf2" to "font_style_file_name=ABC" where "ABC" must be replaced by your pf2 file, this also works to modify the "theme_conf" variable
 
 
