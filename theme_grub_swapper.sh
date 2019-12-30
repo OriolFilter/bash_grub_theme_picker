@@ -16,14 +16,13 @@ Themes_var="$Themes_folder\$Theme/"
 #Theme_files
 font_style_file_name="font32.pf2"
 theme_conf_file_name="theme.txt"
-
 ##################################################################################
 ################################FUNCTIONS#########################################
 ##################################################################################
 
 check_if_rdy()
 {
-ready=$(cat /boot/grub/grub.cfg | grep -q ^Theme= && echo true || echo false)
+ready=$(cat $grub_file | grep -q ^Theme= && echo true || echo false)
 if [[ "$ready" == "false" ]];then
 	printf "The file $grub_file is not ready\nWould you like me to fix it?\n(Y)es, (N)o\n"
 	read fix
@@ -44,7 +43,7 @@ fi
 fix_file()
 {
 printf "\nfixing file...\n" 
-echo "Theme=" > grub.tmp && cat grub.cfg >> grub.tmp ##create_tmp_file
+echo "Theme=" > $grub_tmp && cat $grub_file >> grub_tmp ##create_tmp_file
 fix_loadfont
 }
 
@@ -104,6 +103,7 @@ max="$(ls -l1 $Themes_folder | tr ' ' ':' | cut -f 10 -d ':' | nl | sort -r | he
 filter()
 {
 filter_theme=$(cat $grub_file | grep ^Theme= )
+#echo $filter_theme #Debugg
 }
 
 
@@ -145,8 +145,6 @@ replace()
 filter
 echo "sed -i 's/$filter_theme/Theme=$Theme_selected/g' $grub_file" | bash /dev/stdin
 }
-
-
 
 
 ########
