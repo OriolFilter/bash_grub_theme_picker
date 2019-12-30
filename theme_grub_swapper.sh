@@ -43,7 +43,7 @@ fi
 fix_file()
 {
 printf "\nfixing file...\n" 
-echo "Theme=" > $grub_tmp && cat $grub_file >> grub_tmp ##create_tmp_file
+echo "Theme=" > $grub_tmp && cat $grub_file >> $grub_tmp ##create_tmp_file
 fix_loadfont
 }
 
