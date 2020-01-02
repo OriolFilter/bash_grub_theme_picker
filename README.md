@@ -2,7 +2,7 @@
 
 ## NOTES
 
-	[Notes]
+	[Having to Improve code]
 
 
 ## HOW TO USE IT
@@ -12,6 +12,16 @@
 	use "./theme_grub_swapper.sh"
 	or
 	use "bash theme_grub_swapper.sh"
+	or
+	use ". theme_grub_swapper.sh"
+
+	In case you want to run in "silent/random mode" you must use as first argument "-r" or "-R", both arguments work in the same way (not full silence, but have minimal output)
+
+	use "./theme_grub_swapper.sh -r"
+	or
+	use "bash theme_grub_swapper.sh -r"
+	or
+	use ". theme_grub_swapper.sh -r"
 
 
 ## IMPORTANT
@@ -26,15 +36,11 @@
 
 ### README
 
-	Add the atribute "-R" or "-r" to generate a random number in silence mode.
-	Keep in mind that first gonna check if your grub.conf it's correct, if gurb.conf isn't correct, it will show the repair menú, so test it before you put this inside a  script
-
-	~~Maybe it's better that if it's in "random/silence" mode it runs the fixer without ask...~~
-
+	Grub theme picker script, feel free to share your opinion!
 
 #### Thinks to do/improve over the time
 
-	[EMPTY]
+	[Improve code (argument input)]
 
 #### Errors to fix over the time
 

@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 
 ##Variables
@@ -76,7 +76,7 @@ cp $grub_tmp $grub_file && rm $grub_tmp #saves_changes (maybe it overwrites your
 check_random()
 {
 if [[ "$1" == "-r" || "$1" == "-R" ]]; then
-	printf "magic's done! You selected: "
+	printf "Magic's done! You selected: "
 	silent='>/dev/null'
 	random=true
 fi
