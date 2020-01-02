@@ -2,7 +2,7 @@
 
 ## NOTES
 
-	[Having to Improve code]
+	[Having to Improve code && change silent/random to random (-r) and create a full silent option (-s)]
 
 
 ## HOW TO USE IT
