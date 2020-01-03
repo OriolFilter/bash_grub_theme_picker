@@ -79,15 +79,21 @@ if [[ "$1" == "-r" || "$1" == "-R" ]]; then
 	printf "Magic's done! You selected: "
 	silent='>/dev/null'
 	random=true
+elif [[ "$1" == "-s" || "$1" == "-S" ]]; then
+	silent='>/dev/null'
+	fullsilent='>/dev/null'
+	random=true
 fi
 check_if_rdy
 }
 
 get_theme()
 {
-ls -l1 $Themes_folder | tr ' ' ':' | cut -f 10 -d ':' | nl | awk '$1'"==$N" | cut -f 2
 Theme_selected="$(ls -l1 /boot/grub/themes/ | tr ' ' ':' | cut -f 10 -d ':' | nl | awk '$1'==$N | cut -f 2)"
 echo "printf '\nYou selected $Theme_selected as a Grub theme\n'" $silent | bash /dev/stdin
+if [[ "$random" == "true" ]]; then
+	echo "printf '$Theme_selected\n' $fullsilent" | bash /dev/stdin
+fi
 replace
 }
 

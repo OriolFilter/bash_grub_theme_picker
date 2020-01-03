@@ -2,26 +2,44 @@
 
 ## NOTES
 
-	[Having to Improve code && change silent/random to random (-r) and create a full silent option (-s)]
+	List of things alredy done:
+
+		Script that let you select the grub theme
+
+		Random mode
+
+		Silent+Random mode
+
+	[Having to Improve code]
 
 
 ## HOW TO USE IT
 
-	Run this with bash
+	Run this with bash:
 	
-	use "./theme_grub_swapper.sh"
-	or
-	use "bash theme_grub_swapper.sh"
-	or
-	use ". theme_grub_swapper.sh"
+		use "./theme_grub_swapper.sh"
+		or
+		use "bash theme_grub_swapper.sh"
+		or
+		use ". theme_grub_swapper.sh"
 
-	In case you want to run in "silent/random mode" you must use as first argument "-r" or "-R", both arguments work in the same way (not full silence, but have minimal output)
 
-	use "./theme_grub_swapper.sh -r"
-	or
-	use "bash theme_grub_swapper.sh -r"
-	or
-	use ". theme_grub_swapper.sh -r"
+	In case you want to run in "random mode" you must use as first argument "-r" or "-R", both leters work in the same way.
+
+		use "./theme_grub_swapper.sh -r"
+		or
+		use "bash theme_grub_swapper.sh -r"
+		or
+		use ". theme_grub_swapper.sh -r"
+
+
+	In case you want to run in "Silent+Random mode" you must use as first argument "-s" or "-S", both leters work in the same way.
+
+		use "./theme_grub_swapper.sh -r"
+		or
+		use "bash theme_grub_swapper.sh -r"
+		or
+		use ". theme_grub_swapper.sh -r"
 
 
 ## IMPORTANT
