@@ -2,6 +2,9 @@
 
 ## NOTES
 
+		### Read the code before use it!
+
+	
 	List of things alredy done:
 
 		Script that let you select the grub theme
@@ -14,6 +17,7 @@
 
 
 ## HOW TO USE IT
+
 
 	Run this with bash:
 	
@@ -40,6 +44,20 @@
 		use "bash theme_grub_swapper.sh -r"
 		or
 		use ". theme_grub_swapper.sh -r"
+
+
+## IDEAS
+
+
+	You can run this script on startup or on poweroff so you have a different theme every time you boot up!
+
+
+		#### One way to do it:
+
+		Create a alias at "/etc/bash.bashrc" so every user use it, or at /userhomefolder/.bashrc so only the users that have this alias use it
+
+			alias poweroff"bash /where/the/script/be -s && poweroff"
+			alias reboot"bash /where/the/script/be -s && reboot"
 
 
 ## IMPORTANT
