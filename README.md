@@ -56,8 +56,8 @@
 
 		Create a alias at "/etc/bash.bashrc" so every user use it, or at /userhomefolder/.bashrc so only the users that have this alias use it
 
-			alias poweroff"bash /where/the/script/be -s && poweroff"
-			alias reboot"bash /where/the/script/be -s && reboot"
+			alias poweroff="bash /where/the/script/be -s && poweroff"
+			alias reboot="bash /where/the/script/be -s && reboot"
 
 
 ## IMPORTANT
